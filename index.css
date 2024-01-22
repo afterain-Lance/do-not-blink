@@ -1,0 +1,39 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  display: none;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.active {
+  display:block;
+}
+
+.ready {
+  display: block;
+  opacity : 0;
+}
+
+.active-flex {
+  display: flex;
+}
