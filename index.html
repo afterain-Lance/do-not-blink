@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <div style="position: absolute; bottom:0; left:0; display:flex;">
+    <div style="position: absolute; bottom:0; left:0; display:flex; z-index: 1;">
         <audio id="bgm" class='active' src="don't blink.mp3" controls></audio>
     </div>
     <p id="1" style="font-size: 8rem; transition: font-size 250ms">이것은</p>
-    <p id="2" style="transition: all 100ms ">애플의</p>
+    <p id="2" style="transition: all 300ms ">애플의</p>
     <div id="ready?" style="transition: scale 200ms">
         <span style='font-size: 8rem;' class="ready">준</span>
         <span style='font-size: 8rem;' class="ready">비</span>
@@ -26,6 +26,11 @@
     <p id="3" style="transition: scale 300ms ">눈을</p>
     <div id="popup-1" style="position: absolute; background-color: white; font-size:50rem; justify-content:center; align-items:center; width: 100%; height: 100%; font-weight:900; color: black;">깜빡</div>
     <p id="countdown" style="transition: font-size 400ms; font-size: 200rem;">3</p>
+    <p id="alabama" style="transition: font-size 300ms; font-size:8rem; ">팀</p>
+    <video style="position: absolute;" onloadstart="this.volume=0" id="alabama-video" src="/alabama.mp4"></video>
+    <video style="position: absolute;" onloadstart="this.volume=0" id="stage-video" src="/stage.mp4"></video>
+    <p id="hello" style="font-size: 20rem; color: black; text-wrap: nowrap; font-weight: 900; text-align: center; width:max-content; overflow:hidden;">안녕</p>
+    <p id="introduce" style="font-size: 2rem; transition: font-size 200ms, opacity 600ms;">제가</p>
     <script type="module" src="/index.js"></script>
 </body>
 
