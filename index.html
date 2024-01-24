@@ -4,33 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Don't Blink</title>
     <link type="text/css" rel="stylesheet" href="/index.css">
 </head>
 
 <body>
+    <video style="position: absolute;" onloadstart="this.volume=0" id="background-video" src></video>
     <div style="position: absolute; bottom:0; left:0; display:flex; z-index: 1;">
         <audio id="bgm" class='active' src="don't blink.mp3" controls></audio>
     </div>
     <p id="1" style="font-size: 8rem; transition: font-size 250ms">이것은</p>
-    <p id="2" style="transition: all 300ms ">애플의</p>
-    <div id="ready?" style="transition: scale 200ms">
-        <span style='font-size: 8rem;' class="ready">준</span>
-        <span style='font-size: 8rem;' class="ready">비</span>
-        <span style='font-size: 8rem;' class="ready">되</span>
-        <span style='font-size: 8rem;' class="ready">셨</span>
-        <span style='font-size: 8rem;' class="ready">나</span>
-        <span style='font-size: 8rem;' class="ready">요</span>
-        <span style='font-size: 8rem;' class="ready">?</span>
+    <p id="2" style="transition: all 300ms ease">애플의</p>
+    <div id="ready?" style="transition: scale 200ms ease; font-size: 8rem;">
+        <span class="ready">준</span>
+        <span class="ready">비</span>
+        <span class="ready">되</span>
+        <span class="ready">셨</span>
+        <span class="ready">나</span>
+        <span class="ready">요</span>
+        <span class="ready">?</span>
     </div>
-    <p id="3" style="transition: scale 300ms ">눈을</p>
-    <div id="popup-1" style="position: absolute; background-color: white; font-size:50rem; justify-content:center; align-items:center; width: 100%; height: 100%; font-weight:900; color: black;">깜빡</div>
+    <p id="3" style="transition: scale 300ms ease">눈을</p>
+    <div id="popup-1"
+        style="position: absolute; background-color: white; font-size:50rem; justify-content:center; align-items:center; width: 100%; height: 100%; font-weight:900; color: black;">
+        깜빡</div>
     <p id="countdown" style="transition: font-size 400ms; font-size: 200rem;">3</p>
-    <p id="alabama" style="transition: font-size 300ms; font-size:8rem; ">팀</p>
-    <video style="position: absolute;" onloadstart="this.volume=0" id="alabama-video" src="/alabama.mp4"></video>
-    <video style="position: absolute;" onloadstart="this.volume=0" id="stage-video" src="/stage.mp4"></video>
-    <p id="hello" style="font-size: 20rem; color: black; text-wrap: nowrap; font-weight: 900; text-align: center; width:max-content; overflow:hidden;">안녕</p>
-    <p id="introduce" style="font-size: 2rem; transition: font-size 200ms, opacity 600ms;">제가</p>
+    <p id="alabama" style="transition: font-size 300ms ease; font-size:8rem; ">팀</p>
+    <p id="hello"
+        style="font-size: 20rem; color: black; text-wrap: nowrap; font-weight: 900; text-align: center; width:max-content; overflow:hidden;">
+        안녕</p>
+    <p id="introduce" style="font-size: 2rem; transition: font-size 200ms, opacity 1500ms; z-index: 1">제가</p>
+    <p id="desc-1"
+        style="transition: opacity 250ms ease 0s, transform 250ms ease 0s; position: absolute; z-index: 1; opacity: 0;">
+        이것이</p>
+    <p id="desc-2"
+        style="transition: opacity 500ms ease 0s, transform 500ms ease 0s; position: absolute; z-index: 1; transform: translate(4rem); opacity : 0;">
+        바로</p>
+    <p style="color: black; font-size: 55rem;" id="big-seven">7</p>
+    <div id="seven-spelling" style='font-size: 8rem;'>
+        <span>S</span>
+        <span></span>
+        <span>e</span>
+        <span></span>
+        <span>v</span>
+        <span>e</span>
+        <span>n</span>
+    </div>
+    <div id="seven-desc-1" style="font-size: 4rem; color: black;">
+        <span>두개의&nbsp;</span>
+        <span>크기.</span>
+    </div>
+    <div id="seven-desc-2" style="color: black; transition: scale 250ms ease;">
+        <span>두개의&nbsp;</span>
+        <span>새로운&nbsp;</span>
+        <span>블랙.</span>
+    </div>
+    <p id="seven-desc-3">블랙</p>
+    <div id="seven-desc-4" style="font-size: 4rem;">
+        <span>그리고&nbsp;</span>
+        <span>제대로 된&nbsp;</span>
+        <span>블랙.</span>
+    </div>
+    <div id="seven-desc-5" style="font-size: 4rem;">
+        <span>제트&nbsp;</span>
+        <span>블랙.</span>
+    </div>
+    <div id="seven-desc-6" style="font-size: 4rem;">
+        <span>블랙&nbsp;</span>
+        <span>진짜&nbsp;</span>
+        <span>블랙</span>
+    </div>
+    <div id="seven-desc-7"
+        style="transition: transform 750ms; justify-content: center; transform : translateX(-3rem); font-size: 4rem; z-index : 1;">
+        <span
+            style='transition: opacity 300ms, max-width 250ms; text-wrap:nowrap; overflow: hidden; width: 100%; max-width: max-content;'>이건&nbsp;</span>
+        <span 
+            style='transition: max-width 750ms; opacity:1; text-wrap:nowrap; overflow: hidden; display: none; max-width:max-content;'>
+            <span style="opacity:1;">핵심</span>
+            <span style="transition: opacity 300ms; opacity:1;">에서부터 블랙.</span>
+        </span>
+    </div>
     <script type="module" src="/index.js"></script>
 </body>
 
