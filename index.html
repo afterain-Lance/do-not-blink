@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Don't Blink</title>
     <link type="text/css" rel="stylesheet" href="/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <audio id="bgm" class='active' src="don't blink.mp3" controls></audio>
     </div>
     <p id="1" style="font-size: 8rem; transition: font-size 250ms">이것은</p>
-    <p id="2" style="transition: all 300ms ease">애플의</p>
+    <p id="2" style="transition: opacity 200ms, transform 50ms ease; opacity: 0; transform: translateX(5rem);">애플의</p>
     <div id="ready?" style="transition: scale 200ms ease; font-size: 8rem;">
         <span class="ready">준</span>
         <span class="ready">비</span>
@@ -26,7 +27,7 @@
     </div>
     <p id="3" style="transition: scale 300ms ease">눈을</p>
     <div id="popup-1"
-        style="position: absolute; background-color: white; font-size:50rem; justify-content:center; align-items:center; width: 100%; height: 100%; font-weight:900; color: black;">
+        style="background-color: white; font-size:30rem; justify-content:center; align-items:center; width: 100%; height: 100%; font-weight:900; color: black;">
         깜빡</div>
     <p id="countdown" style="transition: font-size 400ms; font-size: 200rem;">3</p>
     <p id="alabama" style="transition: font-size 300ms ease; font-size:8rem; ">팀</p>
@@ -42,13 +43,13 @@
         바로</p>
     <p style="color: black; font-size: 55rem;" id="big-seven">7</p>
     <div id="seven-spelling" style='font-size: 8rem;'>
-        <span>S</span>
-        <span></span>
-        <span>e</span>
-        <span></span>
-        <span>v</span>
-        <span>e</span>
-        <span>n</span>
+        <span style="transition: scale 50ms, display 100ms;">S</span>
+        <span style="transition: scale 50ms, display 100ms;"></span>
+        <span style="transition: scale 50ms, display 100ms;">e</span>
+        <span style="transition: scale 50ms, display 100ms;"></span>
+        <span style="transition: scale 50ms, display 100ms;">v</span>
+        <span style="transition: scale 50ms, display 100ms;">e</span>
+        <span style="transition: scale 50ms, display 100ms;">n</span>
     </div>
     <div id="seven-desc-1" style="font-size: 4rem; color: black;">
         <span>두개의&nbsp;</span>
@@ -81,7 +82,7 @@
         <span 
             style='transition: max-width 750ms; opacity:1; text-wrap:nowrap; overflow: hidden; display: none; max-width:max-content;'>
             <span style="opacity:1;">핵심</span>
-            <span style="transition: opacity 300ms; opacity:1;">에서부터 블랙.</span>
+            <span style="transition: opacity 200ms; opacity:1;">에서부터 블랙.</span>
         </span>
     </div>
     <script type="module" src="/index.js"></script>
